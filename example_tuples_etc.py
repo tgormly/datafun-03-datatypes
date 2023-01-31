@@ -53,7 +53,7 @@ tupleAThrice = tupleA * 3
 # TODO: Start using this f-string "syntactic sugar" for quick ouptut
 # just add space = space inside the curly braces
 # it will print the name of the variable and the value
-print(f"{tupleA = }")
+print(f"{tupleA = }") # this is very cool!  I assumed you needed to do f"tupleA = {tupleA}"
 print(f"{tupleB = }")
 print(f"{tupleCat = }")
 print(f"{tupleAThrice = }")
@@ -69,6 +69,9 @@ hasFour = 4 in tupleD  # False
 
 my_tuple = (1, 2, 3)
 first = my_tuple[0]
+
+print(f"{my_tuple[0] = }") # this synactic sugar works with index references too
+
 second = my_tuple[1]
 third = my_tuple[2]
 last = my_tuple[-1]
@@ -85,10 +88,7 @@ def divide_and_remainder(dividend, divisor):
 
 q, r = divide_and_remainder(10, 3)
 print(f"Quotient: {q}, Remainder: {r}")
-
-
 """
-
 
 SETS .......................................................    
 
@@ -112,23 +112,33 @@ Set symmetric difference (using the symmetric_difference method or ^ operator)
 
 setA = {1, 2, 3, 4, 5}
 setB = {4, 5, 6, 7, 8}
-
+print(f"{setA = }") 
+print(f"{setB = }")
 # set union
 setC = setA | setB
+print(f"{setC = }")
 
 # set intersection
 setD = setA & setB
+print(f"{setD = }")
 
 # set difference
 setE = setA - setB
+print(f"{setE = }") # contains values from set A, minus all values in set B
 
 # sets are often used to remove duplicates from a list
 # after gettin the set, convert it back to a list with list() or []
 listWords = ["apple", "banana", "apple", "pear", "banana", "orange"]
 setWords = set(listWords)
 listWordsNoDuplicates = list(setWords)
-listWordsNoDuplicates = [setWords]  # same as above
 
+print(f"{listWordsNoDuplicates = }")
+
+listWordsNoDuplicates = [setWords]  # same as above - except this appears to create a list with one item at index 0, a set of pear orange apple banana, where the code on line 136 creates just a list without duplicates
+
+print(f"{listWordsNoDuplicates = }")
+print(f"{listWordsNoDuplicates[0] = }")
+# print(f"{listWordsNoDuplicates[0][1] = }") # this does not work as sets are unordered and their items are not indexed
 
 """
 

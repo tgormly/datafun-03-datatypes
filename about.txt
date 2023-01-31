@@ -1,0 +1,44 @@
+
+
+==============================================================
+==============================================================
+
+ Welcome!
+
+ It's 2023-01-28 at 02:11 PM
+
+ This file is running on:    nt Windows 10
+ 
+ The Python version is:      3.10.8
+ 
+ The Python interpreter is at:
+ C:\ProgramData\miniconda3\python.exe
+
+ The active environment should be either conda OR pip (one should be None):
+
+     Active conda env is: base
+     Active pip env is:   None
+ 
+ The path to the active virtual environment is:
+
+ C:\ProgramData\miniconda3
+ 
+ The Current Working Directory (CWD) where this command was launched is:
+
+ c:\Users\timgo\OneDrive\Desktop\School\Spring2023\Week3\datafun-03-datatypes
+ 
+ The absolute path to the data directory is:
+
+ c:\Users\timgo\OneDrive\Desktop\School\Spring2023\Week3\datafun-03-datatypes\
+ 
+ The absolute path to this source directory is:
+
+ c:\Users\timgo\OneDrive\Desktop\School\Spring2023\Week3\datafun-03-datatypes
+ 
+ The absolute path to this file is:
+
+ c:\Users\timgo\OneDrive\Desktop\School\Spring2023\Week3\datafun-03-datatypes\about.py
+ 
+==============================================================
+==============================================================
+

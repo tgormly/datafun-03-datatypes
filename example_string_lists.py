@@ -35,15 +35,27 @@ list_adverbs = ["quickly", "slowly", "happily", "sadly", "angrily", "scaredly"]
 # read in woodchuck to get a list of words
 with open("text_woodchuck.txt", "r") as fileObject:
     text = fileObject.read()
+
+    print(text)
+
     list_words = text.split()  # split on whitespace
+    
+    print(list_words)
+    
     unique_words = set(list_words)  # remove duplicates
+
+    print(unique_words) # interesting that because we are splitting on only whitespace, "wood" and "wood." are both kept in the set - we would need additional code to strip punctuation
+
 
 # Print the count and list of words
 word_ct = len(list_words)
 
+print(f"This file contains {word_ct} total words")
+
 # Print the count and list of unique words
 unique_word_ct = len(unique_words)
 
+print(f"This file contains {unique_word_ct} total unique words")
 
 # Create a random sentence
 # e.g. "The angry dog runs quickly."
